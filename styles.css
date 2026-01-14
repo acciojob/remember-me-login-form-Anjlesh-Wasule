@@ -8,17 +8,27 @@ form {
     flex-direction: column;
     width: 300px;
     gap: 10px;
-    margin-bottom: 10px;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="submit"] {
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
     padding: 8px;
+}
+
+#checkbox {
+    margin-bottom: 20px;
+    /* Resetting width for checkbox to avoid stretching in flex container */
+    width: auto; 
+    align-self: flex-start;
 }
 
 #existing {
-    padding: 8px;
     margin-top: 10px;
+    padding: 8px;
     cursor: pointer;
 }

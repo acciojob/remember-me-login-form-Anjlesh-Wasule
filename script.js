@@ -3,13 +3,14 @@ const existingBtn = document.getElementById('existing');
 const usernameInput = document.getElementById('username');
 const passwordInput = document.getElementById('password');
 const checkbox = document.getElementById('checkbox');
+const form = document.getElementById('loginForm');
 
 // Check localStorage on page load
 if (localStorage.getItem('username') && localStorage.getItem('password')) {
     existingBtn.style.display = 'block';
 }
 
-submitBtn.addEventListener('click', (e) => {
+form.addEventListener('submit', (e) => {
     e.preventDefault(); // Stop form submission refresh
 
     const username = usernameInput.value;
