@@ -1,1 +1,24 @@
-/*  your css code here. If applicable */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    padding: 8px;
+}
+
+#existing {
+    padding: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
